@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,700&display=swap');
+
+/* --------------------- MY RESET --------------------- */
+html,body {
+    margin: 0; padding: 0; width: 100%; height: 100%;
+}
+h1, h2, h3, h4, ul, li, p, a, blockquote {
+    margin: 0; padding: 0; line-height: 1; font-size: 100%; font-weight: normal; color: #000; text-decoration: none;
+} 
+img{
+    vertical-align: top;
+}
+em{ 
+    font-style: normal;
+}
+.hidden{
+    display: none;
+}
+
+
+/* --------------------- TYPOGRAPHY --------------------- */
+body { 
+    font-family: 'Source Sans Pro', sans-serif; font-weight: 300; font-size: 18px;
+}
+
+
+/* --------------------- HEADER SLOGAN --------------------- */
+header {
+    background: #2c2f36; height: 81px; line-height: 81px; text-align:center;
+}
+header .logo a {
+    font-size: 24px; color: #ffffff; 
+} 
+header .logo a em {
+    font-weight: bold;
+}
+.slogan{
+    padding: 107px 0 97px; background: #e2e2e2;
+}
+.slogan h2 {
+    font-size: 50px; color: #11262e;     
+}
+.slogan p {
+    margin: 23px 0 40px; font-size: 28px; color: #11262e; line-height: 37px;
+}
+.slogan a {
+    display:inline-block; padding: 0 62px; background: #00c494; border-radius: 4px; height: 76px; line-height: 76px; font-size: 28px; color: #fff;
+}
+
+
+
+/* --------------------- testimonial --------------------- */
+.testimonial {
+    background: #f0f0f0; padding: 53px 0; text-align: center;
+}
+.testimonial blockquote { 
+    line-height: 27px;
+}
+.testimonial blockquote p{
+    font-size: 28px;
+}
+.testimonial blockquote small{
+    font-size: 19px; font-style: italic;
+}
+
+/* --------------------- device --------------------- */
+/* absolute요소가 있는부분에는 감싸는부분의 padding을줄때 absolute요소를 기준으로 줘선 안된다.
+   absolute가 아닌 다른자식요소를 기준으로 여백을 지정 */
+.device {
+    padding: 97px 0 216px;
+}
+.device h3{
+    font-size: 35px; color: #2c2f36; margin-bottom: 26px;
+}
+.device p{
+    font-size: 18px; line-height: 27px;
+}
+.appliance img{
+    position: absolute; left: 70px; opacity: 0; 
+}
+#phone {
+    margin-top: 60px;
+}
+#phone.animate{
+    transform: translateX(14em);
+}
+#monitor.animate {
+    transform: translateX(3em); 
+}
+/* animation과 transition 효과가 동시에 줄수있는 효과 */
+.animate{
+    animation: fadeIn 1s forwards ease-in;
+    transition: 2s ease-in-out;
+}
+
+
+/* --------------------- features --------------------- */
+
+
+/* --------------------- location --------------------- */
+
+
+/* --------------------- keyframes --------------------- */
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% { opacity: 1; }
+}
