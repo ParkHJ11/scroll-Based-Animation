@@ -48,7 +48,6 @@ header .logo a em {
 }
 
 
-
 /* --------------------- testimonial --------------------- */
 .testimonial {
     background: #f0f0f0; padding: 53px 0; text-align: center;
@@ -62,6 +61,7 @@ header .logo a em {
 .testimonial blockquote small{
     font-size: 19px; font-style: italic;
 }
+
 
 /* --------------------- device --------------------- */
 /* absolute요소가 있는부분에는 감싸는부분의 padding을줄때 absolute요소를 기준으로 줘선 안된다.
@@ -87,21 +87,107 @@ header .logo a em {
 #monitor.animate {
     transform: translateX(3em); 
 }
+
+
 /* animation과 transition 효과가 동시에 줄수있는 효과 */
-.animate{
+.animate, .grow-img, .animate_down{
     animation: fadeIn 1s forwards ease-in;
     transition: 2s ease-in-out;
 }
 
 
 /* --------------------- features --------------------- */
+.features{
+    padding: 83px 0;
+    background: #f0f0f0;
+}
+.features .item {
+    text-align:center;
+}
+.features .item img{
+    width: 0; height: 0; 
+}
+.features .item img.grow-img{
+    width: 169px; height: 169px; 
+}
+.features .item h4{
+    opacity: 0; margin-top: 15px; color: #2c2f36; font-size: 30px; text-transform: uppercase;
+}
 
 
 /* --------------------- location --------------------- */
+.location {
+    position: relative;
+}
+.location .stripes {
+    display: flex; 
+}
+.stripes .stripe{
+    width: 10%; height: 0px;
+}
+.stripes .stripe.animate_down{
+    height: 516px;
+}
 
+#s1 {
+    background: #2c2f36;
+}
+#s2 {
+    background: #444850;
+}
+#s3 {
+    background: #36383c;
+}
+#s4 {
+    background: #1e2026;
+}
+#s5 {
+    background: #444850;
+}
+#s6 {
+    background: #2b2d30;
+}
+#s7 {
+    background: #212326;
+}
+#s8 {
+    background: #36383c;
+}
+#s9 {
+    background: #36383c;
+}
+#s10 {
+    background: #2c2f36;
+}
+.location .contents{
+    position: absolute; padding: 155px 0 120px; z-index: 10; left: 0; right: 0; top: 0;
+}
+.location .contents .map {
+    position: relative;
+}
+#location_map{
+    margin-left: 90px;
+}
+#radar{
+    position: absolute; left:109px; top: -40px; animation: rotation 10s infinite linear;
+}
+.contents h2 {
+    font-size: 40px; margin-bottom: 30px; color: #ffffff; margin-top: 10px;
+}
+.contents p {
+    font-size: 28px; line-height: 37px; color: #ffffff;
+}
 
 /* --------------------- keyframes --------------------- */
 @keyframes fadeIn{
     0% {opacity: 0;}
     100% { opacity: 1; }
+}
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
