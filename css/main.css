@@ -128,12 +128,44 @@ header .logo a em {
 .stripes .stripe.animate_down{
     height: 516px;
 }
-
+/* css를 이용한 버전
 #s1 {
+    background: #2c2f36; transition-delay: 0.1s;
+}
+#s2 {
+    background: #444850; transition-delay: 0.2s;
+}
+#s3 {
+    background: #36383c; transition-delay: 0.3s;
+}
+#s4 {
+    background: #1e2026; transition-delay: 0.4s;
+}
+#s5 {
+    background: #444850; transition-delay: 0.5s;
+}
+#s6 {
+    background: #2b2d30; transition-delay: 0.6s;
+}
+#s7 {
+    background: #212326; transition-delay: 0.7s;
+}
+#s8 {
+    background: #36383c; transition-delay: 0.8s;
+}
+#s9 {
+    background: #36383c; transition-delay: 0.9s;
+}
+#s10 {
+    background: #2c2f36; transition-delay: 1s;
+}
+ */
+ /* 스크립트를 이용한 버전 */
+ #s1 {
     background: #2c2f36;
 }
 #s2 {
-    background: #444850;
+    background: #444850; 
 }
 #s3 {
     background: #36383c;
@@ -146,19 +178,20 @@ header .logo a em {
 }
 #s6 {
     background: #2b2d30;
-}
+} 
 #s7 {
     background: #212326;
 }
 #s8 {
-    background: #36383c;
+    background: #36383c; 
 }
 #s9 {
     background: #36383c;
 }
 #s10 {
-    background: #2c2f36;
+    background: #2c2f36; 
 }
+
 .location .contents{
     position: absolute; padding: 155px 0 120px; z-index: 10; left: 0; right: 0; top: 0;
 }
