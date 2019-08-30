@@ -15,7 +15,7 @@ $(function(){
         if($(this).scrollTop()>$featuresOST){
             $features.find('img').addClass('grow-img');
             $features.find('h4').addClass('animate');
-        
+        }
         if($(this).scrollTop()>$locationOST){
             
             
